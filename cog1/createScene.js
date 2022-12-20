@@ -21,8 +21,10 @@ function(exports, scenegraph, animation) {
 		/**var cubeNode = scenegraph.createNodeWithModel("cube", "cube", {scale:200});
 		cubeNode.rotateTo([0.5, 1, 0]);**/
 
-		var sphere = scenegraph.createNodeWithModel("sphere", "sphere", {scale:400, recursionDepth:4});
-
+		var sphere1 = scenegraph.createNodeWithModel("Sphere1", "sphere", {scale:400, recursionDepth:4});
+		sphere1.translate([-700,0,0])
+		var sphere2 = scenegraph.createNodeWithModel("Sphere2", "sphere", {scale:500, recursionDepth:5});
+		sphere2.translate([400,0,0])
 		// BEGIN exercise myModel
 		/**var cubeNode = scenegraph.createNodeWithModel("myModel", "myModel", {scale:300});
 		cubeNode.rotateTo([0.2, -0.2, 0]);**/
